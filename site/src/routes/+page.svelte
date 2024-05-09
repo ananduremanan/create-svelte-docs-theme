@@ -38,9 +38,9 @@
     <button
       class="bg-gray-200 p-2 rounded-2xl mt-2 px-4"
       on:click={() =>
-        copyToClipboard("npx create create-svelte-docs-theme@latest mydocs")}
+        copyToClipboard("npx create-svelte-docs-theme@latest mydocs")}
     >
-      <code>npx create create-svelte-docs-theme@latest mydocs</code>
+      <code>npx create-svelte-docs-theme@latest mydocs</code>
     </button>
     {#if isCopied}
       <p class="text-green-500">Text copied to clipboard</p>
