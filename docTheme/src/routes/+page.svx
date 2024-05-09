@@ -1,0 +1,9 @@
+### Introduction
+
+This Documentation describes how to install and use `gbs-svelte-block` component library.
+
+#### Installation
+
+```bash
+    npm i @grampro/svelte-block
+```

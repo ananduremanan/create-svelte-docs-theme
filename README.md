@@ -1,0 +1,34 @@
+# Create-Svelte-Docs-Theme
+
+Create-Svelte-Docs-Theme is a powerful documentation theme generator tailored specifically for Svelte projects. With this tool, you can effortlessly generate professional-grade documentation for your Svelte components, APIs, or project tutorials with ease.
+
+## Features
+
+- **Easy Customization:** Customize themes, layouts, and styles to match your project's branding and requirements.
+- **Dark Mode Support:** Seamlessly switch between light and dark modes for improved readability in any environment.
+- **SVX Integration:** Integrate Markdown content alongside your Svelte components for comprehensive documentation.
+- **Tailwind CSS Support:** Built-in support for Tailwind CSS ensures consistent styling and customization options.
+
+## Installation
+
+To install Create-Svelte-Docs-Theme, simply use npm:
+
+```bash
+npx create create-svelte-docs-theme@latest mydocs
+```
+
+## Getting Started
+
+For detailed instructions on getting started with Create-Svelte-Docs-Theme, please refer to the documentation.
+
+## Contributing
+
+We welcome contributions from the community! If you'd like to contribute to Create-Svelte-Docs-Theme, please read our [contribution guidelines](CONTRIBUTING.md) and submit a pull request.
+
+## License
+
+Create-Svelte-Docs-Theme is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+**Note:** This project is not affiliated with or endorsed by the Svelte framework. Svelte is a trademark of its respective owners.

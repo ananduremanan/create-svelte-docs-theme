@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+article {
+  width: 100%;
+}
+
+h3 {
+  margin-top: 1rem !important;
+}
+
+table th {
+  @apply border p-1;
+}
+
+td {
+  @apply border;
+}
+
+tr {
+  @apply even:bg-gray-50 dark:even:bg-gray-700;
+}
+
+.language-svelte {
+  @apply text-yellow-300;
+}
+
+.language-svelte .keyword {
+  @apply text-blue-400;
+}
+
+.language-svelte .string {
+  @apply text-white;
+}
+
+.language-svelte .punctuation {
+  @apply text-blue-500;
+}
+
+.language-svelte .script {
+  @apply text-green-500;
+}
+
+.language-svelte .language-javascript {
+  @apply text-green-300;
+}
+
+.prose {
+  max-width: 85ch !important;
+}
