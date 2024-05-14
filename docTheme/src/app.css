@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* For WebKit browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 5px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* color of the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* color of the thumb on hover */
+}
+
+body {
+  overflow: hidden;
+}
+
 article {
   width: 100%;
 }
