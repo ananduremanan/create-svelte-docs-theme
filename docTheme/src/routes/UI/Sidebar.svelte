@@ -50,10 +50,5 @@
         >
       </li>
     {/each}
-    <li
-      class={`mt-2 py-1 ${current_url === "Experimental" ? "bg-blue-200 rounded-lg text-blue-500 dark:bg-blue-300" : ""}`}
-    >
-      <a href="/Experimental" class="block p-1">Experimental</a>
-    </li>
   </ul>
 </div>
