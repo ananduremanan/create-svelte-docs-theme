@@ -1,35 +1,35 @@
-<script lang="ts">
+<script>
   import "../app.css";
-  import Navbar from "$lib/components/Navbar.svelte";
-  import { onMount } from "svelte";
-  import Sidebar from "$lib/components/Sidebar.svelte";
+  import Navbar from "./UI/Navbar.svelte";
+  import Sidebar from "./UI/Sidebar.svelte";
 
-  let menuItemsArray: any[] = [];
+  let showSideBar = false;
 
-  async function fetchData() {
-    const modules = import.meta.glob("./components/**/*.svx");
-    const menuItems = Object.keys(modules).map(
-      (item) => item.replace("./components/", "").split("/")[0]
-    );
-    menuItemsArray = menuItems;
-  }
-
-  onMount(fetchData);
+  const toggleSidebar = () => {
+    showSideBar = !showSideBar;
+  };
 </script>
 
-<Navbar {menuItemsArray} />
-<div class="flex flex-col md:flex-row h-full mt-24">
-  <Sidebar {menuItemsArray} />
-  <div class="overflow-auto w-full max-h-[87vh]">
-    <article
-      class="prose lg:prose-xl dark:prose-invert px-4 md:text-base sx-content dark:prose-pre:bg-gray-700"
-    >
-      <slot />
-    </article>
-    <div class="flex flex-col px-4 mb-8">
-      <div class="text-sm mt-10 text-gray-500 justify-end prose">
-        last updated on
-      </div>
+<div class="flex flex-col h-screen">
+  <Navbar
+    on:mobile_menu_clicked={() => {
+      toggleSidebar();
+    }}
+  />
+  <div class="flex flex-1 overflow-hidden">
+    <Sidebar bind:showSideBar />
+    <div class="p-1 flex-1 overflow-auto">
+      <article
+        class="prose lg:prose-xl dark:prose-invert px-4 md:text-base sx-content dark:prose-pre:bg-gray-700"
+      >
+        <slot />
+      </article>
     </div>
   </div>
 </div>
+
+<style global>
+  body {
+    @apply m-0 p-0;
+  }
+</style>

@@ -35,12 +35,20 @@ table th {
   @apply border p-1;
 }
 
+tr {
+  @apply even:bg-gray-50 dark:even:bg-gray-700;
+}
+
 td {
   @apply border;
 }
 
-tr {
-  @apply even:bg-gray-50 dark:even:bg-gray-700;
+.sample {
+  border: 0px !important;
+}
+
+.sample tr {
+  @apply even:bg-white dark:even:bg-black;
 }
 
 .language-svelte {
