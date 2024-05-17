@@ -80,7 +80,7 @@
   </div>
   <p class="mt-16">
     For Bug Report, Code, Questions and More <a
-      href="https://github.com/ananduremanan/svelte-docs-template"
+      href="https://github.com/ananduremanan/create-svelte-docs-theme"
       class="underline decoration-dotted">Github</a
     >
   </p>
