@@ -27,6 +27,14 @@ article {
   width: 100%;
 }
 
+.content-container {
+  scrollbar-width: none;
+}
+
+.content-container::-webkit-scrollbar {
+  display: none;
+}
+
 h3 {
   margin-top: 1rem !important;
 }
