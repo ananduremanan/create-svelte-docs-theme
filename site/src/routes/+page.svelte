@@ -1,6 +1,5 @@
 <script lang="ts">
   import Card from "$lib/Card.svelte";
-  import { onMount } from "svelte";
 
   let isCopied = false;
   let isCopiedBun = false;
@@ -26,15 +25,15 @@
 <section
   class="flex flex-col justify-center items-center text-center mt-12 md:px-60"
 >
-  <h1 class="text-2xl font-bold">Svelte Docs Generator</h1>
-  <p class="text-sm">
+  <h1 class="text-6xl font-bold">Svelte Docs Generator</h1>
+  <p class="text-sm mt-2">
     Effortlessly Generate Documentation for Your Svelte Projects and More
   </p>
 
   <div class="mt-8">
     <p>Installation</p>
     <button
-      class="bg-gray-200 p-2 mt-2 px-4"
+      class="bg-gray-200 p-2 mt-2 px-4 cursor-copy"
       on:click={() =>
         copyToClipboard("npx create-svelte-docs-theme@latest mydocs", false)}
     >
@@ -49,7 +48,7 @@
 
   <div class="">
     <button
-      class="bg-gray-200 p-2 mt-2 px-4"
+      class="bg-gray-200 p-2 mt-2 px-4 cursor-copy"
       on:click={() =>
         copyToClipboard("bunx create-svelte-docs-theme@latest mydocs", true)}
     >
